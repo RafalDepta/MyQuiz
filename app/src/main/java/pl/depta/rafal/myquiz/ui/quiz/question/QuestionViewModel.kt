@@ -17,7 +17,7 @@ class QuestionViewModel
 @Inject constructor(dataManager: DataManager, application: Application) : BaseViewModel(dataManager, application) {
 
     var questionAndAnswers: LiveData<QuestionAndAnswers>? = null
-    var question = ObservableField<QuestionEntity>()
+    var question = ObservableField<QuestionEntity>(QuestionEntity())
     var radioButtonMap: MutableMap<Int, Long> = hashMapOf()
     var questionOrder: Int = 0
 

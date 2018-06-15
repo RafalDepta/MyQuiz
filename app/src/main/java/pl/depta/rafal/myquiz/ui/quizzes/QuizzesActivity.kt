@@ -41,7 +41,6 @@ class QuizzesActivity : BaseActivity<ActivityQuizzesBinding, QuizzesViewModel>()
         mBinding = viewDataBinding
         setUp()
         subscribeLiveData()
-        Log.d("DB", DebugDB.getAddressLog())
     }
 
     private fun setUp() {
@@ -60,7 +59,6 @@ class QuizzesActivity : BaseActivity<ActivityQuizzesBinding, QuizzesViewModel>()
     }
 
     override fun onClick(id: Long) {
-        Log.d("QuizzesActivity", "Clicked!!! ID: $id")
         val intent = Intent(this, QuizActivity::class.java)
         intent.putExtra(QUIZ_ID, id)
         startActivity(intent)
