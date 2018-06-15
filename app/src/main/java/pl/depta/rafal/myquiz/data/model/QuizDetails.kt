@@ -1,0 +1,30 @@
+package pl.depta.rafal.myquiz.data.model
+
+data class QuizDetails(
+    val celebrity: Celebrity,
+    val rates: List<Rate>,
+    val questions: List<Question>,
+    val createdAt: String,
+    val sponsored: Boolean,
+    val title: String,
+    val type: String,
+    val content: String,
+    val tags: List<Tag>,
+    val buttonStart: String,
+    val shareTitle: String,
+    val categories: List<Category>,
+    val id: Long,
+    val scripts: String,
+    val mainPhoto: MainPhoto,
+    val category: Category,
+    val isBattle: Boolean,
+    val created: Int,
+    val latestResults: List<LatestResult>,
+    val avgResult: Double,
+    val resultCount: Int,
+    val cityAvg: Any,
+    val cityTime: Any,
+    val cityCount: Any,
+    val userBattleDone: Boolean,
+    val sponsoredResults: SponsoredResults
+)
